@@ -26,5 +26,5 @@
 
 ## Stage 2 Deliverable Summary
 - **Slide Deck Submission**: `VK26-IITH-SC-0543.pptx` / `VK26-IITH-SC-0543.pdf`
-- **Total Hardware Bill of Materials**: ₹14,800 ($178.20 USD)
+- **Total Hardware Bill of Materials**: ~₹45,290 ($178.20 USD)
 - **Primary Technical Achievement**: Successful architectural pivot from failed optical depth sensing (RealSense + Jetson) to robust 10 Hz acoustic bathymetric sounding penetrating zero-visibility muddy floodwaters.

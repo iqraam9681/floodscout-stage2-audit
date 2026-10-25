@@ -15,9 +15,9 @@ This document details the wiring and electrical schematic of the **FloodScout Au
 
 ## Pinout & Connection Matrix
 
-### 1. Acoustic Depth Sensor (JSN-SR04T Waterproof Ultrasonic Transducer)
+### 1. Acoustic Depth Sensor (Blue Robotics Ping2 Acoustic Echosounder)
 The waterproof transducer probe is mounted submerged or through-hull on the catamaran central keel, facing straight down into the roadbed.
-| JSN-SR04T Driver Pin | ESP32 Pin | Function / Wire Color | Notes |
+| Ping2 Sonar Pin | ESP32 Pin | Function / Wire Color | Notes |
 |:---|:---|:---|:---|
 | **VCC** | ESP32 `VIN` (5V) | Power (+5V, Red) | Powered from 5V rail |
 | **GND** | ESP32 `GND` | Ground (Black) | Common ground |
@@ -53,7 +53,7 @@ $$\text{Depth}_{\text{corrected}} = \text{Depth}_{\text{measured}} \times \cos(\
 Drives two 12V DC thruster motors using differential steering (skid-steer mode).
 | TB6612FNG Pin | ESP32 / Power Pin | Function / Wire Color | Notes |
 |:---|:---|:---|:---|
-| **VM** | 3S LiPo (+11.1V / 12V) | Motor Power (+12V, Red) | Direct battery rail |
+| **VM** | 2S 18650 (+7.4V nominal) | Motor Power (+12V, Red) | Direct battery rail |
 | **VCC** | ESP32 `3V3` | Logic Power (+3.3V, Red) | 3.3V logic level |
 | **GND** | System `GND` | Ground (Black) | Star ground to battery & logic |
 | **PWMA** | ESP32 `GPIO 25` | Left Motor Speed (Green) | Hardware PWM (LEDC channel 0) |
@@ -69,8 +69,8 @@ Drives two 12V DC thruster motors using differential steering (skid-steer mode).
 ---
 
 ### 5. Power Architecture
-- **Battery**: 3S LiPo (11.1V nominal, 12.6V peak, 2200 mAh, 25C).
+- **Battery**: 2S 18650 Li-ion pack (7.4V nominal, 8.4V peak, 2500mAh).
 - **DC-DC Step-Down (Buck Converter)**: LM2596 / MP1584 switching regulator.
-  - Input: 11.1V to 12.6V from LiPo.
+  - Input: 7.4V to 8.4V from 2S pack.
   - Output: Regulated 5.0V @ 2.5A to ESP32 `VIN` and sensor rails.
 - **Star Grounding**: High-current motor ground and sensitive analog/RF grounds meet at a central terminal block to eliminate ground loop noise.

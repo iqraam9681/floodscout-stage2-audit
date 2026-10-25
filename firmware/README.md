@@ -10,7 +10,7 @@ The firmware performs real-time acoustic sounding (10 Hz), IMU attitude tilt com
 ## File: `floodscout_esp32_firmware.ino`
 
 ### Key Features:
-- **Acoustic Sounding**: Drives the JSN-SR04T waterproof transducer (or Blue Robotics Ping Sonar) with 10 µs trigger pulses and pulse-width echo timing adjusted for the speed of sound in water (~1498 m/s).
+- **Acoustic Sounding**: Drives the Blue Robotics Ping2 acoustic echosounder with 10 µs trigger pulses and pulse-width echo timing adjusted for the speed of sound in water (~1498 m/s).
 - **Trigonometric Tilt Correction**: Reads vessel roll ($\phi$) and pitch ($\theta$) from the MPU-6050 6-DOF IMU over Fast I2C (400 kHz) and applies geometric correction:
   $$\text{Depth}_{\text{corrected}} = \text{Depth}_{\text{raw}} \cdot \cos(\theta) \cdot \cos(\phi)$$
 - **Autonomous Pothole Hazard Scoring**:
