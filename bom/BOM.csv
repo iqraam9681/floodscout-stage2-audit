@@ -1,0 +1,17 @@
+Item,Component,Part_Specification,Qty,Unit_Cost_INR,Total_Cost_INR,Sourcing,Status
+1,Acoustic Echosounder,Blue Robotics Ping2 Sonar 115kHz 0.3-30m UART,1,36000,36000,Imported USA,Estimated quote pending
+2,MCU Mainboard,Espressif ESP32-S3 DevKitC-1,1,0,0,Local India,On hand (owned)
+3,Alert Board MCU,ESP32 NodeMCU-32S,1,500,500,Domestic,Estimated quote pending
+4,GNSS Module,u-blox NEO-M8N + Ceramic Patch Antenna,1,1200,1200,Domestic,Estimated quote pending
+5,Inertial Sensor,MPU-6050 / BNO055 6-DOF IMU Breakout,1,350,350,Domestic,Estimated quote pending
+6,Motor Driver,Toshiba TB6612FNG Dual H-Bridge Driver,1,650,650,Domestic,Estimated quote pending
+7,Thrusters,Submersible 12V DC Motors + 3-Blade Props,2,1200,2400,Domestic,Estimated quote pending
+8,Battery Cells,18650 Li-ion 2500mAh Cells 2S configuration,2,0,0,Local India,On hand (owned)
+9,Battery BMS,2S 7.4V 10A Li-ion Protection BMS Board,1,150,150,Domestic,Estimated quote pending
+10,Voltage Regulation,Synchronous DC-DC Buck Converters 5V and 3.3V,2,110,220,Domestic,Estimated quote pending
+11,Leak Detection,Conductive Grid Water Leak Sensor,1,120,120,Domestic,Estimated quote pending
+12,Hull Materials,Twin PVC/XPS Foam Floats + Acrylic Deck,1,1600,1600,Domestic,Estimated quote pending
+13,Enclosure,IP67 Waterproof Box + PG7 Cable Glands,1,850,850,Domestic,Estimated quote pending
+14,Alert Hardware,3x LEDs Green Amber Red + Buzzer + Housing,1,450,450,Domestic,Estimated quote pending
+15,Carrier PCB,Custom 2-Layer FR4 Prototype PCB,1,800,800,Domestic,Estimated quote pending
+TOTAL,,,,,45290,,
